@@ -1,11 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.MenuPrincipalController">
-    
+<AnchorPane id="AnchorPane" prefHeight="347.0" prefWidth="412.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.MenuPrincipalController">
+   <children>
+      <TextField fx:id="txtNum2" layoutX="36.0" layoutY="153.0" />
+      <JFXTextField fx:id="txtResultado" editable="false" layoutX="36.0" layoutY="241.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="36.0" layoutY="70.0" text="Num 1">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="128.0" text="Num 2">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="216.0" text="Resultado">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnSoma" buttonType="RAISED" layoutX="266.0" layoutY="96.0" onAction="#soma" prefHeight="47.0" prefWidth="102.0" style="-fx-background-color: green;" text="Soma" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="154.0" layoutY="14.0" text="Calculadora">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNum1" layoutX="33.0" layoutY="95.0" />
+   </children>
 </AnchorPane>
