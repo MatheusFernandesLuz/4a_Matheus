@@ -8,7 +8,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="347.0" prefWidth="412.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.MenuPrincipalController">
+<AnchorPane id="AnchorPane" prefHeight="421.0" prefWidth="412.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.MenuPrincipalController">
    <children>
       <TextField fx:id="txtNum2" layoutX="36.0" layoutY="153.0" />
       <JFXTextField fx:id="txtResultado" editable="false" layoutX="36.0" layoutY="241.0" prefHeight="25.0" prefWidth="149.0" />
@@ -32,11 +32,16 @@
             <Font size="16.0" />
          </font>
       </JFXButton>
-      <Label layoutX="154.0" layoutY="14.0" text="Calculadora">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Label>
       <TextField fx:id="txtNum1" layoutX="33.0" layoutY="95.0" />
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="412.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Cadastros">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Alunos" />
+                  <MenuItem mnemonicParsing="false" text="Fechar" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
    </children>
 </AnchorPane>
