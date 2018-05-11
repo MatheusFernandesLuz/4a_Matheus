@@ -27,7 +27,7 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <JFXButton fx:id="btnSoma" buttonType="RAISED" layoutX="266.0" layoutY="96.0" onAction="#soma" prefHeight="47.0" prefWidth="102.0" style="-fx-background-color: green;" text="Soma" textFill="WHITE">
+      <JFXButton fx:id="btnSoma" buttonType="RAISED" layoutX="266.0" layoutY="105.0" onAction="#soma" prefHeight="47.0" prefWidth="102.0" style="-fx-background-color: green;" text="Soma" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
@@ -37,11 +37,16 @@
         <menus>
           <Menu mnemonicParsing="false" text="Cadastros">
             <items>
-              <MenuItem mnemonicParsing="false" text="Alunos" />
-                  <MenuItem mnemonicParsing="false" text="Fechar" />
+              <MenuItem mnemonicParsing="false" onAction="#abrirCadastroAluno" text="Alunos" />
+                  <MenuItem fx:id="menuFechar" mnemonicParsing="false" onAction="#Fechar" text="Fechar" />
             </items>
           </Menu>
         </menus>
       </MenuBar>
+      <JFXButton fx:id="btnFechar" buttonType="RAISED" layoutX="266.0" layoutY="193.0" onAction="#Fechar" prefHeight="47.0" prefWidth="102.0" style="-fx-background-color: red;" text="Fechar" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
    </children>
 </AnchorPane>
